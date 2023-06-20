@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+    font-family: 'Cairo', sans-serif;}
+
+
+*{
+  font-family: 'Cairo', sans-serif !important;
+  /* -webkit-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; */
+}
+input[type="text"]{
+  direction: rtl;
+}
+button{
+  transition-duration: .3s;
+  cursor: pointer;
+}
+select{
+  cursor: pointer;
+  position: relative;
+}
+
+.sectionBtn > button:hover {
+  color: #ffffff !important;
+}
+
+select:before
+{
+  content: "sac";
+  display: inline-block;
+  background: white;
+  position: absolute;
+  right: -5px;
+  top: 2px;
+  z-index: 2;
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  border: 2px solid #ddd;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #F5A512;
+  }
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid #1B2251;
+  outline-offset: max(2px, 0.15em);
+}
+
+
+/* Countery Css */

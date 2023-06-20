@@ -1,0 +1,110 @@
+
+:root {
+--bgWhite:#FFFFFF;
+  --btn: #0B253D;
+  --white: #ffffff;
+}
+.spenar{
+  height: 100vh;
+  text-align: center;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #246fe0;
+}
+      .input_phone {
+        position: relative;
+      }
+      .input_phone span {
+        position: absolute;
+        top: 32%;
+        transform: translateY(-50%);
+        left: 10px;
+        background-color: transparent;
+        border: 0;
+        width: auto;
+        padding: 0;
+        box-shadow: initial;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+.boxForm{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  z-index: 1 !important;
+
+}
+.blurHiden{
+  position: absolute;
+  top: 0;
+  height: 100pc;
+  width: 100%;
+  background: rgba(208, 208, 208, 0.1);
+  backdrop-filter: blur(25px);
+}
+.boxBG{
+  /* position: relative; */
+  box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.187);
+}
+.boxDownlode{
+background: rgba(7, 48, 85, 0.1);
+}
+.faceUser{
+  border: 7px #fff solid;
+}
+.act{
+  color: #073055;
+}
+.notAct{
+  color:#878787;
+}
+/* Start hold */
+.hold{
+  height: 100vh;
+  width: 100%;
+  background-color: #8787874d;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* End hold */
+.bgFace{
+  background: no-repeat  url("../../Images/Home/graduates-hands-raised-up-with-graduation-caps\ 1.png");
+  background-size: contain;
+}
+.boxSkill{
+  background: rgba(7, 48, 85, 0.1);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.colorBTN{
+  background-color: #073055;
+}
+
+.bgBtn{
+  background-color: #ffffff;
+/* background: rgba(255, 255, 255, 0.5);
+opacity: 0.4; */
+/* color: #FFFFFF; */
+}
+@media (max-width:900px) {
+  .fixNav{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+} 
+.boxBG{
+  z-index: -1;
+}
+}
